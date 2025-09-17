@@ -1,0 +1,146 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*navbar start */
+.navdata {
+    display: flex;
+    align-items: center;
+}
+.main_tag {
+}
+.main_tag ul {
+    display: inline-flex;
+    font-size:20px;
+    
+}
+.main_tag, ul, li {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-right: 50px;
+    align-content:center;
+    list-style: none;
+
+}
+.main_tag, ul, li, a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+.main_tag, ul, li, a:hover{
+    color:black;
+}
+
+/*navbar start */
+/*Name start*/
+.Main_name h2{
+    font-size:56px;
+    font-family:Montserrat,sans-serif;
+    color:#3d3dfa;
+}
+.main_title {
+    font-size: 25px;
+    text-align: center;
+    line-height: 16px;
+}
+#Button1 {
+    background-color: #3d3dfa;
+    color:white;
+    margin-left:40%;
+    margin-right:50px;
+    border-radius:5px;
+    border:none;
+}
+    #Button1:hover{
+        background-color:#5f2727;
+    }
+    /*font End*/
+    /*main img section*/
+ 
+
+/*main img End*/
+
+/*order section start*/
+.order{
+        margin-left:30%;
+/*        display:inline-flex;*/
+     
+        
+        
+
+}
+.order,h3{
+    padding-right:180px;
+    
+}
+.order #Button2{
+    font-size:25px;
+    background-color:#47b4d0;
+    border-radius:5px;
+    border:none;
+    padding-left:10px;
+    padding-right:10px;
+}
+    .order #Button2:hover{
+        background-color:#5f2727;
+    }
+/*order section end*/
+/*sevices section start*/
+
+.main_heading{
+    font-size:27px; 
+}
+.service_list  li {
+    font-size: 20px;
+    color: black;
+    list-style: circle;
+}
+
+/*sevices section start*/
+/*img gallery start*/
+
+.gallary{
+    
+    margin-left:50px;
+}
+    .gallary, img {
+        transition: transform 0.3s ease-in;
+    }
+.gallary ,img:hover {
+    transform: scale(1.03);
+}
+    /*img gallery end */
+    /*address start */
+    .timing , li {
+        color: black;
+    }
+#Button3{
+    width:200px;
+    height:50px;
+    font-size:30px;
+    border:none;
+    background-color:black;
+    color:white;
+    border-radius:8px;
+}
+    #Button3:hover{
+        background-color: #6cd2b3;
+    }
+
+#Button4 {
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+#Button4:hover {
+    background-color: #6cd2b3;
+    
+}
+/*address End*/

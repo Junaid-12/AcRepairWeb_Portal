@@ -1,0 +1,365 @@
+﻿@model AcRepair.Models.UserModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<head>
+    <title>Ac Repair</title>
+    <link href="~/Content/Maincss.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class=" nav navdata navbar fixed-top  bg-info">
+        <div class="container-fluid">
+
+            <div>
+                <h2 style="color:white;  ">AirCon</h2>
+            </div>
+            <div class=" main_tag">
+                <ul>
+                    <li> <a href="#home">Home</a></li>                   
+                    <li> <a href="#Services">Services</a></li>
+                    <li> <a href="#Contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5  " id="home">
+        <div class="Main_name text-center ">
+            <h2>Khan Aircon</h2>
+        </div>
+        <p class="main_title">Ac, Washing Machine, Fridge, Geyser Repair Service.</p>
+        <p class="main_title">Open today until 10:00 PM</p>
+
+        @{ string phoneNumber = "+919084071294"; // Your phone number
+                                                        }
+        <button class=" btn  col-2 fs-2 " id="Button1" value="Call-Me"  onclick="callnumber('@phoneNumber')" >Call-Me</button>
+
+
+    </div>
+
+    <div class="container-fluid">
+      
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-interval="1500" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" >
+                    <img src="~/Content/img/joshua-fernandez-Q0VNH43Hsu8-unsplash.jpg" class="d-block w-100 h-75" alt="...">
+                </div>
+                <div class="carousel-item" >
+                    <img src="~/Content/img/images (2).jpg" class="d-block w-100 h-75" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/img/jimmy-ofisia-f7xiGC81KTE-unsplash.jpg" class="d-block w-100 h-75" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </div>
+
+
+    <div class="py-4">
+        <p class="text-center fs-3 text-dark">Update</p>
+        <hr style="width:20%; height:3px; margin-left:40%;" />
+    </div>
+
+    <section>
+        <div class=" container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="">
+                        <img src="~/Content/img/images (1).jpg" class="img-fluid" style="height:350px;" />
+                    </div>
+                    <div class="mt-3">
+                        <h3>Repair your Ac</h3>
+                        <p class="fs-4">If you Want To Cool</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="">
+                        <img src="~/Content/img/images (2).jpg" class="img-fluid" style="height:350px;" />
+                    </div>
+                    <div class="mt-3">
+                        <h3>Pick up your Date </h3>
+                        <p class="fs-5">Split & Window Ac Rent, repair, service, Installation & Gas Filling service Noida & Noida Extension.t</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="">
+                        <img src="~/Content/img/6.jpg" class="img-fluid" style="height:350px;" />
+                    </div>
+                    <div class="mt-3">
+                        <h3>All date Avalibale </h3>
+                        <p class="fs-5">We Provide Services Like, Ac Repair, Ac Service, Ac Gas Filling Service, Ac Installation, Ac Gas Filling Service in Noida & Noida Extension.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container bg-light" id="Contact">
+        <div class="order py-5">
+            <h3>Contect Us-</h3>
+            <div class="formdata">
+                <form method="post"  asp-action="Index" >
+                    <div class=" d-flex mb-3 col-12 form-group">
+                        <div class="col-6">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="Name" class="form-control" required />
+                        </div>
+                        <div class="col-6" style="margin-left:20px;">
+                            <label for="Mobile"> Mobile-No</label>
+                            <input type="text" id="Mobile" name="Mobile"  class="form-control" required />
+                        </div>
+                    </div>
+                    <div class=" d-flex col-12 form-group">
+                        <div class="col-6">
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" name="Email" class="form-control " required/>
+                        </div>
+                        <div class="col-6" style="margin-left:20px;">
+                            <label for="Description">Description</label>
+                            <textarea type="text" id="Description" name="Description"  class="form-control" required >Write problem!</textarea>
+                        </div>
+                    </div>
+                    <div class=" d-flex col-12 form-group">
+                       
+                        <div  style="margin-left:10px;">
+                            <button class="btn btn-success col-12" type="submit" >Submit</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class=" py-5">
+        <h2 class="text-center text-capitalize" style="font-size:50px;">
+            services
+        </h2>
+        <hr style="width:20%; height:3px; margin-left:40%;" />
+    </div>
+
+    <section class="py-4" style="        background-color: @*#ccddff*@;">
+        <div class="container ">
+            <div>
+                <p class="fs-2">We provide ac rent repair service installation & gas filling service. Washing Machine, Refrigeration & Geyser Repair Service.</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <p class="main_heading"> Ac Rental Service in noida</p>
+                    <div>
+                        <p class="fs-5">We Provide Service Noida Extension, Gaur City 1, Gaur City 2, Crossing republic, supertech ecovillage, arihant arden, & All Greater Noida Extension Society, Noida Sector-118,</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="main_heading"> Split ac rent in noida</p>
+                    <div>
+                        <p class="fs-5">We Provide Service Noida Extension, Gaur City 1, Gaur City 2, Crossing republic, supertech ecovillage, arihant arden, & All Greater Noida Extension Society, Noida Sector-118,</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="main_heading"> Window ac rent in noida</p>
+                    <div>
+                        <p class="fs-5">We Provide Service Noida Extension, Gaur City 1, Gaur City 2, Crossing republic, supertech ecovillage, arihant arden, & All Greater Noida Extension Society, Noida Sector-118,</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <p class="main_heading"> Ac installation in noida</p>
+                    <div>
+                        <p class="fs-5">We Provide Service Noida Extension, Gaur City 1, Gaur City 2, Crossing republic, supertech ecovillage, arihant arden, & All Greater Noida Extension Society, Noida Sector-118,</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="main_heading"> Split ac installation in noida</p>
+                    <div>
+                        <p class="fs-5">We Provide Service Noida Extension, Gaur City 1, Gaur City 2, Crossing republic, supertech ecovillage, arihant arden, & All Greater Noida Extension Society, Noida Sector-118,</pclass="fs-5">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="main_heading"> Window ac installation in noida</p>
+                    <div>
+                        <p class="fs-5">We Provide Service Noida Extension, Gaur City 1, Gaur City 2, Crossing republic, supertech ecovillage, arihant arden, & All Greater Noida Extension Society, Noida Sector-118,</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5" style=" background-color: #e6eeff;" id="Services">
+        <div class="container">
+            <div>
+                <p class="text-center fs-1 text-capitalize mt-3">Other Services </p>
+            </div>
+            <p class="fs-4">
+                Prince Air Con having 20 years experience with
+                above 2000 satisfied customer chain and Qualified Technical team.
+                We offers a valuable service to your door steps and we provides a
+                customer friendly service at reasonable price. We provide the best
+                service for Multi-brand Air conditioners. We believe in providing not
+                just a service, but an experience, by maintaining a trusting relationship with our clients.
+                The dedicated team of sales & service personnel, technicians, service managers and executives
+                are well trained and provided with the best communication tools for optimum efficiency. Our well
+                knowledge technician team will find out all the problems
+                and give the suggestion to you to maintain the air-conditioner with full efficiency.
+            </p>
+            <div class="service_list">
+                <p class="fs-2"> Sevices List </p>
+                <ul class="list">
+
+                    <li>Ac Rental Service in noida</li>
+                    <li>Split ac rent in noida</li>
+                    <li>  Window ac rent in noida</li>
+                    <li>Ac installation in noida</li>
+                    <li>Split ac installation in noida</li>
+                    <li>Window ac installation in noida</li>
+                    <li>Ac repair in noida</li>
+                    <li> Ac service in noida</li>
+                    <li>Split ac repair in noida</li>
+                    <li>Window ac repair in noida</li>
+                    <li>Ac gas filling in noida</li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <p class="fs-1 text-capitalize text-center">Gallery</p>
+        <hr style="width:20%; height:3px; margin-left:40%;" />
+        <div class="container-fluid">
+            <div class="row mt-5 gallary">
+                <div class="col-lg-4">
+                    <img src="~/Content/img/6.jpg" class="img-fluid" style="width:390px; height:200px; margin-left:20px;" />
+                </div>
+                <div class="col-lg-4">
+                    <img src="~/Content/img/images (1).jpg" class="img-fluid" style="width:390px; height:200px;" />
+                </div>
+                <div class="col-lg-4">
+                    <img src="~/Content/img/images (2).jpg" class="img-fluid" style="width:390px; height:200px;" />
+                </div>
+            </div>
+            <div class="row mt-5 gallary ">
+                <div class="col-lg-4">
+                    <img src="~/Content/img/images.jpg" class="img-fluid" style="width: 390px; height: 200px; margin-left: 20px;" />
+                </div>
+                <div class="col-lg-4">
+                    <img src="~/Content/img/jimmy-ofisia-f7xiGC81KTE-unsplash.jpg" class="img-fluid" style="width:390px; height:200px;" />
+                </div>
+                <div class="col-lg-4">
+                    <img src="~/Content/img/joshua-fernandez-Q0VNH43Hsu8-unsplash.jpg" class="img-fluid" style="width:390px; height:200px;" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center">
+                <p class="text-capitalize fs-1">
+                    Contact
+                </p>
+                <hr style="width:20%; height:3px; margin-left:40%; " />
+            </div>
+            <img src="~/Content/img/Aclocation.JPG"  />
+        </div>
+    </section>
+
+    <section>
+        <div class="container bg-light">
+            <div class="row">
+                <div class="col-lg-4">
+                    <p class="fs-2 text-capitalize mt-5">Contact</p>
+                    <div class="">
+                        <button id="Button3" type="submit" onclick="callnumber('@phoneNumber')">Call-Now</button>
+
+                    </div>
+                    <p class="fs-4 mt-3">0012286485</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fs-2 mt-5">Address</p>
+                    <div>
+                        <button id="Button4" type="submit" value=""  onclick="opneDirection()">Get-Direction </button>
+
+                    </div>
+                    <p class="fs-4 mt-3"> Shop No.56, Omaxe Arcade, opp. Expo Mart, Noida, Uttar Pradesh 201308</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fs-2 text-capitalize mt-5">Business Hours</p>
+                    <div class="fs-4">
+                        <ul class="timing">
+                            <li>Mon:	7:00 AM – 10:00 PM</li>
+                            <li>Tue:	7:00 AM – 10:00 PM</li>
+                            <li>Thu:	7:00 AM – 10:00 PM</li>
+                            <li>Fri:	7:00 AM – 10:00 PM</li>
+                            <li>Sat:	7:00 AM – 10:00 PM</li>
+                            <li>Sun:	7:00 AM – 10:00 PM</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4">
+                    <p class="fs-3">Get-Direction</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fs-3">0065958555</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fs-3">Khan Aircone pvt.ltd @@2022 </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="~/Content/Maincss.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+<script type="text/javascript">
+
+      function callnumber(number) {
+          window.location.href = 'tel:' + number;
+      }
+
+      function opneDirection() {
+          window.open("https://www.google.com/maps/place/Fabindia,+Khan+Market","_blank");
+      }
+</script>
